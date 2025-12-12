@@ -1,0 +1,191 @@
+
+
+<<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Kotipalli Laxmi Harsha — Portfolio</title>
+  <meta name="description" content="Portfolio of Kotipalli Laxmi Harsha — Computer Science Student" />
+  <style>
+    :root{
+      --bg:#ffffff; --text:#0b1220; --muted:#556068; --accent:#0b63ff; --card:#f8fafc; --radius:12px; --maxw:980px;
+      --gap:16px;
+    }
+    *{box-sizing:border-box}
+    html,body{height:100%}
+    body{
+      margin:0;
+      font-family:Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+      background:var(--bg);
+      color:var(--text);
+      -webkit-font-smoothing:antialiased;
+      display:flex;
+      align-items:flex-start;
+      justify-content:center;
+      padding:36px 18px;
+    }
+    .wrap{width:100%; max-width:var(--maxw);}
+    header{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:22px}
+    .brand{display:flex;align-items:center;gap:12px}
+    .logo{width:56px;height:56px;border-radius:10px;background:linear-gradient(135deg,var(--accent),#4aa3ff);display:flex;align-items:center;justify-content:center;font-weight:700;color:white}
+    h1{font-size:20px;margin:0}
+    nav a{color:var(--muted);text-decoration:none;margin-left:14px;font-size:14px}
+
+    main{display:grid;grid-template-columns:320px 1fr;gap:28px}
+    .card{background:var(--card);padding:18px;border-radius:var(--radius);box-shadow:0 6px 18px rgba(12,24,40,0.06)}
+
+    .profile .avatar {
+      width:100%;
+      height:220px;
+      border-radius:8px;
+      overflow:hidden;
+      background:#eee;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+    }
+    .profile .avatar img { width:100%; height:100%; object-fit:cover; display:block; }
+
+    .profile h2{margin:14px 0 6px}
+    .profile p{color:var(--muted);margin:0 0 12px}
+    .skills{display:flex;flex-wrap:wrap;gap:8px}
+    .skill{background:white;padding:8px 10px;border-radius:999px;font-size:13px;border:1px solid #eef4ff;color:var(--text)}
+
+    .projects-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:14px}
+    .project{background:white;padding:14px;border-radius:10px;border:1px solid #eef4ff}
+    .project h3{margin:0 0 6px;font-size:16px}
+    .project p{margin:0 0 8px;color:var(--muted);font-size:13px}
+    .project .links a{font-size:13px;text-decoration:none;color:var(--accent);margin-right:10px}
+
+    footer{margin-top:18px;color:var(--muted);font-size:13px}
+
+    .utilities{display:flex;gap:10px;align-items:center}
+    .btn{display:inline-block;padding:8px 12px;border-radius:8px;text-decoration:none;font-weight:600;border:none;cursor:pointer}
+    .btn-primary{background:var(--accent);color:white}
+    .btn-ghost{background:transparent;border:1px solid #dfeeff;color:var(--accent)}
+
+    @media (max-width:900px){
+      main{grid-template-columns:1fr;}
+      .profile .avatar{height:160px}
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div class="brand">
+        <div class="logo">KH</div>
+        <div>
+          <h1>Kotipalli Laxmi Harsha</h1>
+          <div style="color:var(--muted);font-size:13px">Third-year B.Tech Computer Science Student</div>
+        </div>
+      </div>
+      <nav class="utilities">
+        <!-- Button uses relative path resume.pdf (expects file in same folder) -->
+        <a class="btn btn-primary" href="resume.pdf" download>Download Resume</a>
+        <a class="btn" href="https://github.com/harsha539" target="_blank" rel="noopener noreferrer">GitHub</a>
+        <a class="btn" href="https://www.linkedin.com/in/laxmi-harsha-kotipalli" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+      </nav>
+    </header>
+
+    <main>
+      <aside class="card profile">
+        <!-- Image inserted here; make sure harsha.png is in same folder -->
+        <div class="avatar">
+          <img src="harsha.png" alt="Harsha Photo">
+        </div>
+
+        <h2>Kotipalli Laxmi Harsha</h2>
+        <p>As a passionate and driven third-year B.Tech Computer Science student, I bring a strong foundation in programming, data analysis, and problem-solving. I am committed to continuous learning and contributing to meaningful projects.</p>
+
+        <div style="margin:12px 0 12px">
+          <strong>Location</strong>
+          <div style="color:var(--muted);font-size:13px">Rajahmundry, Andhra Pradesh, India</div>
+        </div>
+
+        <div>
+          <strong>Contact</strong>
+          <div style="color:var(--muted);font-size:13px;margin-top:8px">Email: <a href="mailto:kotipalliharsha9999@gmail.com">kotipalliharsha9999@gmail.com</a><br>Phone: 9849083649</div>
+        </div>
+
+        <div style="margin-top:16px">
+          <strong>Skills</strong>
+          <div class="skills" style="margin-top:8px">
+            <div class="skill">Python</div>
+            <div class="skill">SQL</div>
+            <div class="skill">DBMS</div>
+            <div class="skill">VS Code</div>
+          </div>
+        </div>
+
+        <div style="margin-top:14px">
+          <strong>Soft Skills</strong>
+          <ul style="color:var(--muted);margin:8px 0 0 18px;padding:0;font-size:13px">
+            <li>Communication & Presentation</li>
+            <li>Problem-Solving & Analytical Thinking</li>
+            <li>Adaptability & Quick Learning</li>
+          </ul>
+        </div>
+
+        <div style="margin-top:14px">
+          <strong>Education</strong>
+          <div style="color:var(--muted);font-size:13px;margin-top:8px">
+            <div><strong>Vellore Institute of Technology</strong> — B.Tech (2023 - 2027) | CGPA: 7.57</div>
+            <div style="margin-top:6px"><strong>Shri Shiridi Sai Junior College</strong> — Intermediate (2020 - 2022) | 6.5</div>
+            <div style="margin-top:6px"><strong>DR KKRS GOWTHAM School</strong> — Secondary (2019 - 2020) | 9.86</div>
+          </div>
+        </div>
+
+      </aside>
+
+      <section>
+        <div class="card">
+          <h2>About</h2>
+          <p style="color:var(--muted);margin-top:8px">I am a third-year Computer Science student experienced in programming and data analysis with hands-on project experience. I enjoy building practical solutions, learning new tools, and collaborating in team environments to deliver results under pressure.</p>
+        </div>
+
+        <div class="card" style="margin-top:18px">
+          <div style="display:flex;align-items:center;justify-content:space-between">
+            <h2 style="margin:0">Projects</h2>
+            <div style="color:var(--muted);font-size:13px">Selected work</div>
+          </div>
+
+          <div class="projects-grid" style="margin-top:14px">
+            <article class="project">
+              <h3>Refrigerant Gas Leakage Monitoring System</h3>
+              <p>Developed a real-time leak detection system using gas sensors and an MCU. Implemented automated alerts and an IR blaster for shutdown. Enabled remote monitoring and improved environmental safety, compliance, and operational efficiency.</p>
+              <div class="links"><a href="#" onclick="return false;">Project details</a></div>
+            </article>
+          </div>
+        </div>
+
+        <div class="card" style="margin-top:18px">
+          <h2>Certifications</h2>
+          <ul style="color:var(--muted);margin:8px 0 0 18px;padding:0;font-size:13px">
+            <li>CSI VIT-AP Chapter – Certificate of Appreciation, VIT-AP University (Sep 2023 – Jun 2024)</li>
+            <li>Code Battle – National-Level Coding Event, VIT-AP & Microsoft Student Chapter (2024)</li>
+            <li>Data Analysis with SQL, Boston Training Academy (Mar 2025)</li>
+          </ul>
+        </div>
+
+        <div class="card" style="margin-top:18px">
+          <h2>Academic Summary</h2>
+          <p style="color:var(--muted);margin-top:8px;line-height:1.5">Undergraduate — Vellore Institute of Technology (2023 - 2027). CGPA: 7.57.</p>
+        </div>
+
+        <div class="card" style="margin-top:18px">
+          <h2>Contact</h2>
+          <p style="color:var(--muted);margin-top:8px">Email: <a href="mailto:kotipalliharsha9999@gmail.com">kotipalliharsha9999@gmail.com</a> — Phone: 9849083649</p>
+          <footer>© <span id="year"></span> Kotipalli Laxmi Harsha — Built with HTML & CSS</footer>
+        </div>
+      </section>
+    </main>
+
+  </div>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
